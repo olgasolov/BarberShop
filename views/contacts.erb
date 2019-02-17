@@ -1,0 +1,18 @@
+<h2>Наши контакты</h2>
+<p>Тел. офиса в Самаре: +7960-036-87-98</p>
+<h2>Форма для обратной связи</h2>
+<form action="/contacts" method="POST">	
+	<div class="form-group">
+	    <label for="exampleInputEmail1">Ваше имя</label>
+	    <input name="contacts_name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваше имя" value="<%= @contactsname %>">	  
+  	</div>
+	<div class="form-group">
+	    <label for="exampleInputEmail1">Ваш телефон</label>
+	    <input name="contacts_phone" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваш телефон" value="<%= @contactsphone %>">	  
+  	</div>
+  	<div class="form-group">
+	    <label for="exampleFormControlTextarea1">Ваше обращение</label>
+	    <textarea name="contacts_message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ваше сообщение" value="<%= @contactsmessage %>"></textarea>
+	</div>
+	<button type="button" class="btn btn-primary">Отправить</button>
+</form>
